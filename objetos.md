@@ -1,6 +1,6 @@
 ### **DEFINICIÓN DE OBJETOS**
 
-Tras aprender los tipos de datos primitivos y los arrays vamos ahora a aprender que son los **OBJETOS.**
+Tras aprender los tipos de datos primitivos y los arrays, vamos ahora a aprender que son los **OBJETOS.**
 
 Tenemos que entender los objetos en JS como podríamos entender los objetos en la vida real. 
 
@@ -28,7 +28,7 @@ zapatilla.precio = 100;
 ```
 
 
-Podríamos también definir un objeto usando un indicador objeto, mediante una lista con los nombres de la propiedad y el valor:
+Podríamos también definir un objeto (y es la que os recomendamos) usando un indicador objeto, mediante una lista con los nombres de la propiedad y el valor:
 
 
 ```jsx
@@ -41,7 +41,7 @@ let zapatilla = {
 ```
 
 
-Todas las propiedades no asignadas son de tipo UNDEFINED
+Todas las propiedades no asignadas son de tipo UNDEFINED.
 
 
 ```jsx
@@ -51,7 +51,7 @@ zapatilla.color; //undefined
 
 ### **ACCESO A OBJETOS**
 
-Para acceder al valor de una propiedad de un objeto tendríamos también la siguiente sintaxis:
+Para acceder al valor de una propiedad de un objeto tendríamos la siguiente sintaxis:
 
 
 ```jsx
@@ -72,13 +72,13 @@ let zapatilla = {
 let marcaZapatilla = zapatilla["marca"];
 // let marcaZapatilla = zapatilla.marca también valdría
 
-console.log(marcaZapatilla);
+console.log(marcaZapatilla);//"Nike"
 ```
 
 
 ### **MODIFICACIÓN DE OBJETOS**
 
-De igual manera, para modificar una propiedad de un objeto podríamos hacer lo siguiente. 
+De igual manera, para modificar una propiedad de un objeto, podríamos hacer lo siguiente. 
 
 
 ```jsx
@@ -92,7 +92,7 @@ let zapatilla = {
 zapatilla["talla"] = 38;
 //zapatilla.talla = 38 también valdría
 
-console.log(marcaZapatilla);
+console.log(zapatilla.talla);//38
 ```
 
 
@@ -131,7 +131,7 @@ let zapatilla = {
 // Opción de bucles
 
 for (let clave in zapatilla) {
-    console.log("Zapatilla tiene la clave " + clave+ " con valor: " + zapatilla[clave]);
+    console.log("Zapatilla tiene la clave " + clave + " con valor: " + zapatilla[clave]);
 }
 
 // Opción conocer las claves
@@ -141,6 +141,6 @@ console.log(keys);
 ```
 
 
-Seguiremos ampliando conocimiento de los objetos cuando trabajemos con POO en siguientes sesiones.
+Seguiremos ampliando conocimiento de los objetos cuando trabajemos con POO (Programación Orienada a objetos) en siguientes sesiones.
 
  
