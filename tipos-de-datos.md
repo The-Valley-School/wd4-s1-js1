@@ -112,7 +112,7 @@ let list = ['Edu', 5, true, 'Party'];
 ```
 
 
-Vamos a conocer también la función ´typeof´ que nos indicará el tipo de variable en cada momento:
+Vamos a conocer también la función `typeof` que nos indicará el tipo de variable en cada momento:
 
 
 ```jsx
