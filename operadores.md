@@ -3,17 +3,17 @@ Vamos ahora a trabajar con operadores. Son símbolos matemáticos que nos van a 
 
 ## **OPERADORES ARITMÉTICOS**
 
-El primer grupo de operadores que vamos a ver es el aritmético.
+El primer grupo de operadores que vamos a ver son los aritméticos.
 Nos van a permitir realizar operaciones matemáticas. Utilizamos los signos que conocemos de sobra:
 
-- **'='** Asignación
-- **'-', '/', '*'** Resta, división y multiplicación
-- **'+'** Suma, concatenación
+- `=` Asignación
+- `-`, `/`, `*` Resta, división y multiplicación
+- `+` Suma, concatenación
 
 
 ### **ASIGNACIÓN**
 
-Lo utilizamos para asignarle un valor a nuestra variable
+Lo utilizamos para asignarle un valor a nuestra variable.
 
 
 ```jsx
@@ -24,7 +24,7 @@ let b = 10;
 
 ## **RESTA, DIVISIÓN, MULTIPLICACIÓN**
 
-Para realizar las operaciones necesarias sobre las variables
+Para realizar las operaciones necesarias sobre las variables.
 
 
 ```jsx
@@ -52,10 +52,10 @@ let resultadoSuma3 = "3" + 10;              //Javascript lo seguiría interpreta
 
 A la hora de trabajar en Javascript podemos operar y asignar de manera simultánea para poder conservar ciertos valores. Estos operadores serían:
 
-- **"+="** Suma y asignación
-- **"-="** Resta y asignación
-- **"*="** Multiplicación y asignación
-- **"/="** División y asignación
+- `+=` Suma y asignación
+- `-=` Resta y asignación
+- `*=` Multiplicación y asignación
+- `/=` División y asignación
 
 
 ```jsx
@@ -76,16 +76,16 @@ frase1 += frase2; // frase1 = frase1 + frase2, resultado 'Hola me llamo Eduardo'
 
 ## **OPERADORES LÓGICOS**
 
-Como su propio nombre indica, los operadores lógicos van a servir para que podamos realizar operaciones lógicas con nuestras variables. Operadores lógicos:
+Como su propio nombre indica, los operadores lógicos nos sirven para poder realizar operaciones lógicas con nuestras variables. Tenemos los siguientes:
 
-- OR '||': Se debe cumplir una de las condiciones
-- AND '&&': Deben cumplirse las dos condiciones
-- NOT '!': Negamos el valor
+- OR `||`: Se debe cumplir al menos una de las dos condiciones.
+- AND `&&`: Deben cumplirse las dos condiciones.
+- NOT `!`: Negamos el valor resultando el opuesto.
 
 
 **OR**
 
-Nos devuelve true en caso de que alguna de las variables de la comparativa sea true, en caso contrario, false.
+Nos devuelve `true` en caso de que alguna de las variables de la comparativa sea `true`, en caso contrario, `false`.
 
 
 ```jsx
@@ -109,30 +109,30 @@ let puedoConducir = soyMayorDeEdad && tengoCarnet;
 
 **NOT**
 
-Nos devuelve el valor contrario al expuesto
+Nos devuelve el valor contrario al expuesto.
 
 
 ```jsx
-let noVerdadero = !true;
-let noFalso = !false;
+let noVerdadero = !true; // false
+let noFalso = !false; // true
 ```
 
 
 ## **OPERADORES DE COMPARACIÓN**
 
-Utilizando símbolos específicos vamos a poder comparar también variables
-Operadores comparación:
+Utilizando los operadores de comparación vamos a poder comparar también variables.
 
-- '==': Igual
-- '!=': Distinto
-- '==': Estrictamente igual
-- '!=': Estrictamente distinto
-- '<': Menor
-- '>': Mayor
-- '<=': Menor igual
-- '>=': Mayor igual
 
-Con '==' y '!=' comparamos variables sin tener en cuenta el valor
+- `==` : Igual
+- `!=` : Distinto
+- `===` : Estrictamente igual
+- `!==` : Estrictamente distinto
+- `<`  : Menor
+- `<=` : Menor igual
+- `>`  : Mayor
+- `>=` : Mayor igual
+
+Con `==` y `!=` comparamos variables sin tener en cuenta valor y el tipo de la variable.
 
 
 ```jsx
@@ -144,7 +144,7 @@ Con '==' y '!=' comparamos variables sin tener en cuenta el valor
 ```
 
 
-Con '===' y '!==' comparamos estrictamente incluyendo el valor de la variable
+Con '===' y '!==' comparamos estrictamente incluyendo el valor y tipo de la variable
 
 
 ```jsx
@@ -156,7 +156,7 @@ Con '===' y '!==' comparamos estrictamente incluyendo el valor de la variable
 ```
 
 
-Los símbolos '<', '>', '<=' , '>=' sirven para comparar valores numéricos
+Los símbolos `<`, `>`, `<=` , `>=` sirven para comparar valores numéricos
 
 
 ```jsx
@@ -171,7 +171,7 @@ Los símbolos '<', '>', '<=' , '>=' sirven para comparar valores numéricos
 
 
 ```jsx
-(condición) ? valor1 : valor2
+(condition) ? valor1 : valor2;
 ```
 
 
