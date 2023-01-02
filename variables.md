@@ -8,7 +8,7 @@ Para declarar una variable usamos la palabra **'var'** o **'let'** y a continuac
 
 ```jsx
 var cajon; // Este es nuestro cajón (opción no recomendada)
-let cajon; // Este es nuestro cajón 
+let cajon; // Este es nuestro cajón (opción recomendada)
 ```
 
 
@@ -27,15 +27,15 @@ cajon = 'calcetín';
 // Podemos también declarar e inicializar el valor en una única línea
 let cajon = 'calcetín';
 
-// Podemos declarar e inicializar todas las variables que queramos en una línea, si separamos por comas
+// Podemos declarar e inicializar todas las variables que queramos en una línea, si separamos por comas.
 let cajon = 'calcetín', armario = 'camisa', comoda = 'jersey';
 
-// Nosotros recomendamos siempre declarar en diferentes líneas para que visualmente sea más sencillo identificarlas
+// Nosotros recomendamos siempre declararlas en diferentes líneas para que visualmente sea más sencillo identificarlas.
 let cajon = 'calcetín';
 let armario = 'camisa';
 let comoda = 'jersey';
 
-// A la hora de declarar es importante saber que no podemos usar el mismo nombre para declarar dos variables
+// A la hora de declarar, es importante saber que no podemos usar el mismo nombre para declarar dos variables.
 let cajon = 'calcetín';
 let cajon = 'calzoncillo'; // JS no permite esto
 ```
@@ -43,7 +43,7 @@ let cajon = 'calzoncillo'; // JS no permite esto
 
 ## MODIFICACIÓN DEL VALOR
 
-El valor de las variables puede cambiar, imagina que donde tenía un calcetín pase a ser un cinturón (Así las veces que quieras)
+El valor de las variables puede cambiar, imagina que donde tenía un calcetín pase a ser un cinturón (Así las veces que quieras).
 
 
 ```jsx
@@ -56,7 +56,7 @@ cajon = 'cinturón';
 ```
 
 
-Para rizar un poco el rizo, podemos asignar una variable a otra variable
+Para rizar un poco el rizo, podemos asignar una variable a otra variable.
 
 
 ```jsx
@@ -71,7 +71,7 @@ let buscoEstaPrenda = miPrendaFavorita;
 
 ## NOMBRAR VARIABLES
 
-- Utilizaremos siempre una palabra descriptiva de lo que vaya a contener
+- Utilizaremos siempre una palabra descriptiva de lo que vaya a contener.
 
 
 ```jsx
@@ -81,7 +81,7 @@ let serie;      // Buen nombre para una variable si queremos indicar el título 
 ```
 
 
-- Utilizaremos  nomenclatura lowerCamelCase. Cuando declaramos variables con más de una palabra estas se unen quitando los espacios, y empezando cada palabra siguiente en mayúsculas.
+- Utilizaremos  nomenclatura lowerCamelCase. Cuando declaramos variables con más de una palabra estas se unen quitando los espacios, y empezando la palabra siguiente en mayúsculas.
 
 
 ```jsx
@@ -91,24 +91,24 @@ let actorPrincipal;     // Buena forma de declarar si queremos indicar el actor 
 ```
 
 
-- Como los equipos de desarrollo son cada vez más internacionales, es recomendable que el nombremos las variables en inglés
-- Es muy importante también que el nombre de la variable sea único para impedir que se produzcan errores en el código
+- Como los equipos de desarrollo son cada vez más internacionales, es recomendable que nombremos las variables en inglés.
+- Es muy importante también que el nombre de la variable sea único para impedir que se produzcan errores en el código.
 
 
 
 ## ¿EN QUÉ PARTE DEL CÓDIGO LAS DECLARAMOS?
 
-Tenemos la opción de declarar las variables fuera de cualquier función, estas variables tienen el nombre de VARIABLES GLOBALES y son accesibles desde cualquier parte del proyecto.
+Tenemos la opción de declarar las variables fuera de cualquier función. Estas variables tienen el nombre de VARIABLES GLOBALES y son accesibles desde cualquier parte del proyecto.
 
-El enfoque que tenemos actual es intentar reducir al máximo estas variables e intentar que todas estén en sus funciones, es cierto que a veces es necesario y útil tener cierta variable global que almacene datos genéricos.
+El enfoque que tenemos actualmente es intentar reducir al máximo estas variables e intentar que todas estén en sus funciones, aunque es cierto que a veces es necesario y útil tener cierta variable global que almacene datos genéricos.
 
 Ls **variables locales**, una vez declaradas dentro de su función, solo podrán ser accesibles dentro de la misma.
 
 
 ```jsx
 function showSimpson() {
-  let simpson = "Homer";
-  console.log( simpson );
+	let simpson = "Homer";
+	console.log( simpson );
 }
 
 showSimpson(); // Homer
@@ -120,7 +120,7 @@ console.log( simpson ); // Error
 let simpson = "Homer";
 
 function showSimpson() {
-  console.log( simpson );
+	console.log( simpson );
 }
 
 showSimpson(); // Homer
@@ -133,7 +133,7 @@ let simpson = "Homer";
 
 function showSimpson() {
 	let simpson = "Marge";
-  console.log( simpson );
+	console.log( simpson );
 }
 
 showSimpson(); // Marge
