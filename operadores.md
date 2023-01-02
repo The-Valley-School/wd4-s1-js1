@@ -144,7 +144,7 @@ Con `==` y `!=` comparamos variables sin tener en cuenta valor y el tipo de la v
 ```
 
 
-Con '===' y '!==' comparamos estrictamente incluyendo el valor y tipo de la variable
+Con `===` y `!==` comparamos estrictamente incluyendo el valor y tipo de la variable
 
 
 ```jsx
