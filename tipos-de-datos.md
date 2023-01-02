@@ -1,12 +1,12 @@
-En el video anterior trabajamos con variables pero únicamente guardamos un tipo de dato, el STRING, en este video vamos a ver otra serie de datos que podemos guardar en nuestras variables.
+En el video anterior trabajamos con variables, pero únicamente guardamos un tipo de dato, el STRING. En este video vamos a ver otra serie de datos que podemos guardar en nuestras variables.
 
 El tipo de dato que  tenemos que elegir a la hora de trabajar es el tipo de dato que defina mejor la información que vamos a guardar. Dicho esto, JS es un lenguaje de programación de tipado débil que significa que no tenemos que indicar el tipo de dato que hay que asignar a nuestra variable, pero los tenemos que conocer.
 
 - STRING (cadena de texto)
 - NUMBER (numérico)
-- BOOLEAN (booleno)
+- BOOLEAN (booleano)
 - NULL (nulo)
-- UNDEFINIED (no declarado / no valor)
+- UNDEFINED (no declarado / no valor)
 
 
 ## TIPOS DE DATO
@@ -22,16 +22,20 @@ let message = "Bienvenidos al curso";
 ```
 
 
-Para escribir cadenas en las que hay comillas simples o dobles, tendremos que jugar con las que utilicemos para asignarles un valor:
+Para escribir cadenas en las que hay comillas simples o dobles, tendremos que jugar con las contrarias a las que utilicemos para asignarles un valor.
 
 
 ```jsx
 let message = "Mi amigo me dijo: 'Más vale pájaro en mano...'";
+
 ```
 
 
 En caso de querer mostrar comillas dobles dentro del texto jugaríamos con las simples al contrario.
 
+```jsx
+let messageTwo = 'Mi amigo me dijo: "Más vale pájaro en mano..."';
+```
 
 ### **NUMBER**
 
@@ -50,7 +54,8 @@ Cuidado con poner números entre comillas ya que serán interpretados como una c
 
 ### **BOOLEAN**
 
-Asignación de un valor lógico a la variable. Pudiendo ser true o false. No servirán para almacenar sobre todo información de si cumplen o no cumplen una condición, si esa es verdadera o falsa...
+Asignación de un valor lógico a la variable. Pudiendo ser true o false. Nos servirán para almacenar sobre todo información de si se cumple o no una condición, si esa es verdadera o falsa...
+
 Tienen dos estados: **TRUE/FALSE**
 
 
@@ -62,7 +67,7 @@ let tieneCarnet = false;    // Si es falso
 
 ### **NULL**
 
-Asignación de un valor nulo que no corresponde a dato concreto.
+Asignación de un valor nulo que no corresponde a ningún dato concreto.
 
 
 ```jsx
@@ -77,7 +82,7 @@ Nos indica que a una variable no se le ha dado un tipo de valor.
 
 ```jsx
 let nombre;
-console.log(nombre); // Devuelve undefined por que no se le ha dado ningún valor.
+console.log(nombre); // Devuelve undefined porque no se le ha dado ningún valor.
 ```
 
 
@@ -91,7 +96,7 @@ nombre = undefined;
 
 ### OBJETOS Y ARRAYS
 
-Un objeto es una estructura de datos organizada mientras que los arrays nos sirven para agrupar diferente información que no necesita tener relación. Vemos un adelanto aunque este tipo de datos lo revisaremos en profundidad en otros videos.
+Un objeto es una estructura de datos organizada, mientras que los arrays nos sirven para agrupar diferente información que no necesita tener relación. Vemos un adelanto, aunque este tipo de datos los revisaremos en profundidad en otros videos.
 
 
 ```jsx
@@ -107,7 +112,7 @@ let list = ['Edu', 5, true, 'Party'];
 ```
 
 
-Para terminar, vamos a conocer también la función typeof que nos indicará el tipo de variable en cada momento:
+Vamos a conocer también la función ´typeof´ que nos indicará el tipo de variable en cada momento:
 
 
 ```jsx
@@ -119,10 +124,10 @@ let isTeacher = typeof true; // boolean
 
 Dicho esto, nosotros podríamos utilizar cualquier tipo de dato en nuestra variable, JS no nos va a exigir un tipo de dato concreto.
 
-Para terminar combinamos tipos de datos en una variable para ver cómo actúa:
+Para terminar, combinamos tipos de datos en una variable para ver cómo actúa:
 
 
 ```jsx
-let example1 = 'Homer'  + 10 + 5; // 'Homer105'
-let example2 = 25 +5 + 'Homer'; // '30Homer'
+let example1 = 'Homer'  + 10 + 5; // 'Homer105'. Lo interpreta como un string sin hacer la operación posterior.
+let example2 = 25 + 5 + 'Homer'; // '30Homer'. Hace la operación y concatena el string
 ```
