@@ -1,4 +1,4 @@
-Vamos a practicar ahora con una serie de ejercicios que nos van a ayudar a asentar todos estos conocimientos 😀
+Vamos a practicar ahora con una serie de ejercicios que nos van a ayudar a asentar todos estos conocimientos ;).
 
 
 ### EJERCICIO 1
@@ -76,40 +76,22 @@ console.log(deleteFirsLast(sentence));
 
 let numberList = [1,2,-1,3,5,7];
 
-function deleteFirsLast(list){
+function sumList(list){
     //introduce aquí tu código
 }
 
-console.log(deleteFirsLast(numberList));
+console.log(sumList(numberList));
 ```
 
 
 ### EJERCICIO 5
 
-```scss
-/*
-    Completar el código de la función para que 
-    devuelva la el ganador del balón de oro, siendo 
-		el que más puntuación tenga
-*/
-
-let numberList = [1,2,-1,3,5,7];
-
-function deleteFirsLast(list){
-    // introduce aquí tu código
-}
-
-console.log(deleteFirsLast(numberList));
-```
-
-
-### EJERCICIO 6
-
-
 ```jsx
 /*
-		Completar el código de la función para que 
-    devuelva la suma de los elementos del array.
+    Completar el código de la función para que 
+    devuelva el ganador del balón de oro, siendo 
+    el que más puntuación tenga.
+    Nota: Os toca investigar como ordenar valores númericos ;) 
 */
 
 let playerList = [
@@ -123,11 +105,10 @@ function winner(list){
 }
 
 console.log(winner(playerList));
+
 ```
 
-
-### EJERCICIO 7
-
+### EJERCICIO 6
 
 ```jsx
 /*
