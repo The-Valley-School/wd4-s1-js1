@@ -114,7 +114,7 @@ console.log(winner(playerList));
 /*
 ¡Se nos han mezclado los rebaños!
 Tenemos 2 rebaños de ovejas(o) y vacas(v) mezclados y necesitamos ayuda.
-Completar el código de la función para que, dado dos rebaños mezclados,
+Completar el código de la función para que, dados dos rebaños mezclados,
 devuelva un objeto con el número de ovejas y número de vacas totales.
 
 Ejemplo: 
